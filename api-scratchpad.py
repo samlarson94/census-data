@@ -2,17 +2,20 @@ import os
 from dotenv import load_dotenv, find_dotenv
 import requests
 
-
+# Host
 host = "https://api.census.gov/data"
-
+# Year
 year = '/2022'
-
+# Dataset
 dataset_acronym = '/acs/acs1'
 
+# Get Request
 g = '?get='
 
-variables = 'NAME,B01001_001E'
+# Variables
+variables = 'NAME, B01001_001E'
 
+# Location
 location = '&for=us:*'
 
 #API KEY
